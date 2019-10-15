@@ -11,12 +11,18 @@ public class CalculateSizeOfRoom {
 			float length = scnr.nextFloat();
 			System.out.println("Please enter the width of the room (in feet): ");
 			float width = scnr.nextFloat();
+			System.out.println("Please enter the height of the room (in feet)");
+			float height = scnr.nextFloat();
 			
 //			Calculates and prints out the area and perimeter of a room
 			float area = width * length;
 			float perimeter = 2 * (length + width);
 			System.out.println("The area of the room is: " + area);
-			System.out.println("The perimeter of the room is: " + perimeter);	
+			System.out.println("The perimeter of the room is: " + perimeter);
+			
+//			Extra challenge: Calculates the volume of the room
+			float volume = length * width * height;
+			System.out.println("The volume of the room is: " + volume);
 			
 //			Asks if the user wants to move on to the next room or finish the session
 //			It sets the appropriate boolean for the do while loop
